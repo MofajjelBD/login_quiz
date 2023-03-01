@@ -14,8 +14,8 @@ export default function Singup() {
                 <Form className={`${classN.signup} required `}>
                     <Textinput type="text" placeholder="Enter name" icon="person" />
                     <Textinput type="emial" placeholder="Enter Email" icon="alternate_email" />
-                    <Textinput type="password" placeholder="Enter your password" icon="password" />
-                    <Textinput type="password" placeholder="Enter your password" icon="password" />
+                    <Textinput type="password" placeholder="Enter your password" icon="lock" />
+                    <Textinput type="password" placeholder="Enter your password" icon="lock" />
                     <Checkbox txt="I agree to singup" />
                     <Button>Submit now</Button>
                     <div className="info">
