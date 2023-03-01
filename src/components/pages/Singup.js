@@ -4,13 +4,15 @@ import classN from "../../styles/singup.module.css";
 import Textinput from "../Textinput";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
+import singupimage from '../../assets/images/signup.svg'
+
 
 export default function Singup() {
     return (
         <>
             <h1>Create an account</h1>
             <div className="column">
-                <Illustration />
+                <Illustration singupimage={`${singupimage}`} />
                 <Form className={`${classN.signup} required `}>
                     <Textinput type="text" placeholder="Enter name" icon="person" />
                     <Textinput type="email" placeholder="Enter Email" icon="alternate_email" />
