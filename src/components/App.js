@@ -2,7 +2,8 @@ import "../styles/App.css"
 import Layout from "./Layout";
 // import Home from './pages/Home';
 // import Singup from './pages/Singup';
-import Singin from './pages/Singin';
+// import Singin from './pages/Singin';
+import Quiz from './pages/Quiz';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Layout>
         {/* <Home /> */}
         {/* <Singup /> */}
-        <Singin />
+        {/* <Singin /> */}
+        <Quiz />
       </Layout>
     </>
   );

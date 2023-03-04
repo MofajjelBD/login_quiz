@@ -19,7 +19,7 @@ export default function Singup() {
                     <Textinput type="password" placeholder="Enter your password" icon="lock" />
                     <Textinput type="password" placeholder="Enter your password" icon="lock" />
                     <Checkbox txt="I agree to singup" />
-                    <Button>Submit now</Button>
+                    <Button><span>Submit now</span></Button>
                     <div className="info">
                         Already have an account? <a href="login.html">Login</a> instead.
                     </div>

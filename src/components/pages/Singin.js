@@ -15,7 +15,7 @@ export default function Singup() {
                 <Form className={`${classN.login} required `}>
                     <Textinput type="email" placeholder="Enter Email" icon="alternate_email" />
                     <Textinput type="password" placeholder="Enter your password" icon="lock" />
-                    <Button>Submit now</Button>
+                    <Button><span>Submit now</span></Button>
                     <div className="info">
                         Don't have an account? <a href="login.html">Signup</a> instead.
                     </div>
