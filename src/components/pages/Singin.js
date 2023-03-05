@@ -3,7 +3,8 @@ import Form from "../Form";
 import classN from "../../styles/singin.module.css";
 import Textinput from "../Textinput";
 import Button from "../Button";
-import singupimage from '../../assets/images/login.svg'
+import singupimage from '../../assets/images/login.svg';
+import { Link } from 'react-router-dom';
 
 
 export default function Singup() {
@@ -17,7 +18,7 @@ export default function Singup() {
                     <Textinput type="password" placeholder="Enter your password" icon="lock" />
                     <Button><span>Submit now</span></Button>
                     <div className="info">
-                        Don't have an account? <a href="login.html">Signup</a> instead.
+                        Don't have an account? <Link to="/singup">Signup</Link> instead.
                     </div>
                 </Form>
             </div>

@@ -4,7 +4,8 @@ import classN from "../../styles/singup.module.css";
 import Textinput from "../Textinput";
 import Checkbox from "../Checkbox";
 import Button from "../Button";
-import singupimage from '../../assets/images/signup.svg'
+import singupimage from '../../assets/images/signup.svg';
+import { Link } from 'react-router-dom';
 
 
 export default function Singup() {
@@ -21,7 +22,7 @@ export default function Singup() {
                     <Checkbox txt="I agree to singup" />
                     <Button><span>Submit now</span></Button>
                     <div className="info">
-                        Already have an account? <a href="login.html">Login</a> instead.
+                        Already have an account? <Link to="/login">Login</Link> instead.
                     </div>
                 </Form>
             </div>
