@@ -1,10 +1,6 @@
 import Illustration from "../Illustration";
-import Form from "../Form";
-import classN from "../../styles/singin.module.css";
-import Textinput from "../Textinput";
-import Button from "../Button";
 import singupimage from '../../assets/images/login.svg';
-import { Link } from 'react-router-dom';
+import LoginForm from "../LoginForm";
 
 
 export default function Singup() {
@@ -13,14 +9,7 @@ export default function Singup() {
             <h1>Login to your account</h1>
             <div className="column">
                 <Illustration singupimage={`${singupimage}`} />
-                <Form className={`${classN.login} required `}>
-                    <Textinput type="email" placeholder="Enter Email" icon="alternate_email" />
-                    <Textinput type="password" placeholder="Enter your password" icon="lock" />
-                    <Button><span>Submit now</span></Button>
-                    <div className="info">
-                        Don't have an account? <Link to="/singup">Signup</Link> instead.
-                    </div>
-                </Form>
+                <LoginForm />
             </div>
         </>
     );

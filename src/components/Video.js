@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 export default function Video() {
     return (
-        <Link to="/quiz"
-        ><div className={classNamees.video}>
+        <Link to="/quiz" >
+            <div className={classNamees.video}>
                 <img src={image} alt="Video title here" />
                 <p>Play this "Articles Quiz With Answers" and evaluate for yourself.</p>
                 <div className={classNamees.qmeta}>
