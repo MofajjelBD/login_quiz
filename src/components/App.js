@@ -20,8 +20,9 @@ function App() {
             <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
             <Route path="/signup" element={<PublicRoute><Signup /></PublicRoute>} />
             <Route path="/login" element={<PublicRoute><Login /> </PublicRoute>} />
+            <Route path="/quiz/:id" element={<PrivateRoute><Quiz /></PrivateRoute>} />
             <Route path="/quiz" element={<PrivateRoute><Quiz /></PrivateRoute>} />
-            <Route path="/result/" element={<PrivateRoute><Result /></PrivateRoute>} />
+            <Route path="/result/:id" element={<PrivateRoute><Result /></PrivateRoute>} />
             <Route path="*" element={<Error />} />
           </Routes>
         </Layout>

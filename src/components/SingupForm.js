@@ -79,7 +79,7 @@ export default function SignupForm() {
 
             <Checkbox
                 required
-                txt="I agree to the Terms &amp; Conditions"
+                text="I agree to the Terms &amp; Conditions"
                 value={agree}
                 onChange={(e) => setAgree(e.target.value)}
             />

@@ -1,16 +1,14 @@
-import classN from '../styles/Qustion.module.css';
-import Answers from '../components/Answers';
+import classes from "../styles/Qustion.module.css";
+import Answers from "./Answers";
 
-export default function Qustion() {
-    return (
-        <>
-            <div className={classN.question}>
-                <div className={classN.qtitle}>
-                    <span className="material-icons-outlined"> help_outline </span>
-                    Here goes the question from Learn with Sumit?
-                </div>
-                <Answers />
+export default function Question({ answers = [] }) {
+    return answers.map((answer, index) => (
+        <div className={classes.question} key={index}>
+            <div className={classes.qtitle}>
+                <span className="material-icons-outlined"> help_outline </span>
+                {answer.title}
             </div>
-        </>
-    );
+            <Answers input={false} options={answer.options} />
+        </div>
+    ));
 }
