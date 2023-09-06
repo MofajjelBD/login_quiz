@@ -92,7 +92,7 @@ export default function Quiz() {
 
     return (
         <>
-            {loading && <div>Loading ...</div>}
+            {loading && <div>PLoading ...</div>}
             {error && <div>There was an error!</div>}
             {!loading && !error && qna && qna.length > 0 && (
                 <>
